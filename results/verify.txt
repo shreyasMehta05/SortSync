@@ -1,0 +1,74 @@
+void verify_sort_stability(FileInfo originalArray[], FileInfo sortedArray[], int numFiles, int sortKey) {
+    int errorCount = 0;
+    printf("\nVerifying sort and stability for %s:\n",
+           sortKey == 2 ? "Name" :
+           sortKey == 1 ? "ID" : "Timestamp");
+
+    for (int i = 1; i < numFiles; i++) {
+        bool hasError = false;
+        int compareResult = 0;
+
+        switch (sortKey) {
+            case 2: // Name
+                compareResult = comparebyNameCount(&sortedArray[i - 1], &sortedArray[i]);
+                break;
+            case 1: // ID
+                compareResult = compareById(&sortedArray[i - 1], &sortedArray[i]);
+                break;
+            case 3: // Timestamp
+                compareResult = compareByTimestamp(&sortedArray[i - 1], &sortedArray[i]);
+                break;
+        }
+
+        // Check if the array is sorted
+        if (compareResult > 0) {
+            printf("Sort error at %d: '%s', %d, '%s' > '%s', %d, '%s'\n",
+                   i,
+                   sortedArray[i - 1].name, sortedArray[i - 1].fileId, sortedArray[i - 1].timestamp,
+                   sortedArray[i].name, sortedArray[i].fileId, sortedArray[i].timestamp);
+            hasError = true;
+        }
+
+        // Check stability if sorting key is equal, check relative order
+        if (compareResult == 0) {
+            // Search for these elements in the original array and compare their indices
+            int indexFirst = -1, indexSecond = -1;
+            for (int j = 0; j < numFiles; j++) {
+                if (indexFirst == -1 &&
+                    ((sortKey == 1 && strcmp(originalArray[j].name, sortedArray[i - 1].name) == 0) ||
+                     (sortKey == 2 && originalArray[j].fileId == sortedArray[i - 1].fileId) ||
+                     (sortKey == 3 && strcmp(originalArray[j].timestamp, sortedArray[i - 1].timestamp) == 0))) {
+                    indexFirst = j;
+                }
+
+                if (indexSecond == -1 &&
+                    ((sortKey == 1 && strcmp(originalArray[j].name, sortedArray[i].name) == 0) ||
+                     (sortKey == 2 && originalArray[j].fileId == sortedArray[i].fileId) ||
+                     (sortKey == 3 && strcmp(originalArray[j].timestamp, sortedArray[i].timestamp) == 0))) {
+                    indexSecond = j;
+                }
+
+                if (indexFirst != -1 && indexSecond != -1) {
+                    break;
+                }
+            }
+
+            // If the original index of the previous element is greater, stability is violated
+            if (indexFirst > indexSecond) {
+                printf("Stability error at %d: '%s', %d, '%s' and '%s', %d, '%s'\n",
+                       i,
+                       sortedArray[i - 1].name, sortedArray[i - 1].fileId, sortedArray[i - 1].timestamp,
+                       sortedArray[i].name, sortedArray[i].fileId, sortedArray[i].timestamp);
+                hasError = true;
+            }
+        }
+
+        if (hasError) errorCount++;
+    }
+
+    if (errorCount == 0) {
+        printf("Sort and stability verification passed!\n");
+    } else {
+        printf("Found %d errors in sort or stability\n", errorCount);
+    }
+}

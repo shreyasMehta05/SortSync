@@ -1,0 +1,33 @@
+
+Count Sort Performance Analysis Summary
+=====================================
+
+Execution Statistics:
+-------------------
+Number of Runs Analyzed: 18
+Average Thread Count: 4.0
+
+Time Performance:
+---------------
+Regular Sort:
+  - Average: 0.376565 seconds
+  - Min: 0.314543 seconds
+  - Max: 0.570731 seconds
+
+Parallel Sort:
+  - Average: 0.312690 seconds
+  - Min: 0.270988 seconds
+  - Max: 0.373861 seconds
+
+Speedup Analysis:
+---------------
+- Average Speedup: 1.2052x
+- Maximum Speedup: 1.5415x
+- Minimum Speedup: 0.9793x
+- Speedup Std Dev: 0.1277
+
+Memory Usage:
+-----------
+- Average: 377834.67 KB
+- Maximum: 402176 KB
+- Minimum: 369664 KB

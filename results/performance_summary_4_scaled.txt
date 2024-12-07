@@ -1,0 +1,9 @@
+
+Performance Analysis Summary:
+Optimal threshold for parallel performance: 3000
+Best parallel execution time: 0.001622 seconds
+Maximum speedup: 1.8515x at threshold 3000
+
+Average speedup: 1.0139x
+Median speedup: 1.0772x
+Speedup standard deviation: 0.4597

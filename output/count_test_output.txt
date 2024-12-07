@@ -1,0 +1,630 @@
+Run 1 - make clean:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o main
+
+
+Run 1 - make command:
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_count_sort.c -o parallel_count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c count_sort.c -o count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o -lm  # Link the math library
+
+
+
+Run 1 - ./measure.sh ./main output:
+[35mRunning in test mode
+[0m[33mNumber of files: 1000
+Sorting by Name
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0m[33mThreshold: 187
+[0mTotal Depth of Recursion Tree: 3
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.000435 seconds[32m for 1000 elements
+[0m[32mParallel merge sort completed in [33m0.000959 seconds[32m for 1000 elements
+[0m[33mSpeedup: 0.453794
+[0m[31mRegular merge sort was faster by [33m0.000524 seconds.
+[0m[35mToo many files to print
+[0mTotal Runtime (seconds): 0
+Max Memory Usage (KB): 2304
+
+
+
+Run 2 - make clean:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o main
+
+
+Run 2 - make command:
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_count_sort.c -o parallel_count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c count_sort.c -o count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o -lm  # Link the math library
+
+
+
+Run 2 - ./measure.sh ./main output:
+[35mRunning in test mode
+[0m[33mNumber of files: 2000
+Sorting by Name
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0m[33mThreshold: 375
+[0mTotal Depth of Recursion Tree: 3
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.000648 seconds[32m for 2000 elements
+[0m[32mParallel merge sort completed in [33m0.000837 seconds[32m for 2000 elements
+[0m[33mSpeedup: 0.774294
+[0m[31mRegular merge sort was faster by [33m0.000189 seconds.
+[0m[35mToo many files to print
+[0mTotal Runtime (seconds): 0
+Max Memory Usage (KB): 2688
+
+
+
+Run 3 - make clean:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o main
+
+
+Run 3 - make command:
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_count_sort.c -o parallel_count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c count_sort.c -o count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o -lm  # Link the math library
+
+
+
+Run 3 - ./measure.sh ./main output:
+[35mRunning in test mode
+[0m[33mNumber of files: 3000
+Sorting by Name
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0m[33mThreshold: 562
+[0mTotal Depth of Recursion Tree: 3
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.000793 seconds[32m for 3000 elements
+[0m[32mParallel merge sort completed in [33m0.001332 seconds[32m for 3000 elements
+[0m[33mSpeedup: 0.595453
+[0m[31mRegular merge sort was faster by [33m0.000539 seconds.
+[0m[35mToo many files to print
+[0mTotal Runtime (seconds): 0
+Max Memory Usage (KB): 2916
+
+
+
+Run 4 - make clean:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o main
+
+
+Run 4 - make command:
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_count_sort.c -o parallel_count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c count_sort.c -o count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o -lm  # Link the math library
+
+
+
+Run 4 - ./measure.sh ./main output:
+[35mRunning in test mode
+[0m[33mNumber of files: 4000
+Sorting by Name
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0m[33mThreshold: 750
+[0mTotal Depth of Recursion Tree: 3
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.001213 seconds[32m for 4000 elements
+[0m[32mParallel merge sort completed in [33m0.001304 seconds[32m for 4000 elements
+[0m[33mSpeedup: 0.930025
+[0m[31mRegular merge sort was faster by [33m0.000091 seconds.
+[0m[35mToo many files to print
+[0mTotal Runtime (seconds): 0
+Max Memory Usage (KB): 3100
+
+
+
+Run 5 - make clean:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o main
+
+
+Run 5 - make command:
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_count_sort.c -o parallel_count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c count_sort.c -o count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o -lm  # Link the math library
+
+
+
+Run 5 - ./measure.sh ./main output:
+[35mRunning in test mode
+[0m[33mNumber of files: 5000
+Sorting by Name
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0m[33mThreshold: 937
+[0mTotal Depth of Recursion Tree: 3
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.001422 seconds[32m for 5000 elements
+[0m[32mParallel merge sort completed in [33m0.001950 seconds[32m for 5000 elements
+[0m[33mSpeedup: 0.729233
+[0m[31mRegular merge sort was faster by [33m0.000528 seconds.
+[0m[35mToo many files to print
+[0mTotal Runtime (seconds): 0
+Max Memory Usage (KB): 3204
+
+
+
+Run 6 - make clean:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o main
+
+
+Run 6 - make command:
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_count_sort.c -o parallel_count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c count_sort.c -o count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o -lm  # Link the math library
+
+
+
+Run 6 - ./measure.sh ./main output:
+[35mRunning in test mode
+[0m[33mNumber of files: 6000
+Sorting by Name
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0m[33mThreshold: 1125
+[0mTotal Depth of Recursion Tree: 3
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.001791 seconds[32m for 6000 elements
+[0m[32mParallel merge sort completed in [33m0.001445 seconds[32m for 6000 elements
+[0m[33mSpeedup: 1.239417
+[0m[32mParallel merge sort was faster by[33m 0.000346 seconds.
+[0m[35mToo many files to print
+[0mTotal Runtime (seconds): 0
+Max Memory Usage (KB): 3792
+
+
+
+Run 7 - make clean:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o main
+
+
+Run 7 - make command:
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_count_sort.c -o parallel_count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c count_sort.c -o count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o -lm  # Link the math library
+
+
+
+Run 7 - ./measure.sh ./main output:
+[35mRunning in test mode
+[0m[33mNumber of files: 7000
+Sorting by Name
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0m[33mThreshold: 1312
+[0mTotal Depth of Recursion Tree: 3
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.002068 seconds[32m for 7000 elements
+[0m[32mParallel merge sort completed in [33m0.002037 seconds[32m for 7000 elements
+[0m[33mSpeedup: 1.015111
+[0m[32mParallel merge sort was faster by[33m 0.000031 seconds.
+[0m[35mToo many files to print
+[0mTotal Runtime (seconds): 0
+Max Memory Usage (KB): 4124
+
+
+
+Run 8 - make clean:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o main
+
+
+Run 8 - make command:
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_count_sort.c -o parallel_count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c count_sort.c -o count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o -lm  # Link the math library
+
+
+
+Run 8 - ./measure.sh ./main output:
+[35mRunning in test mode
+[0m[33mNumber of files: 8000
+Sorting by Name
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0m[33mThreshold: 1500
+[0mTotal Depth of Recursion Tree: 3
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.003595 seconds[32m for 8000 elements
+[0m[32mParallel merge sort completed in [33m0.002674 seconds[32m for 8000 elements
+[0m[33mSpeedup: 1.344415
+[0m[32mParallel merge sort was faster by[33m 0.000921 seconds.
+[0m[35mToo many files to print
+[0mTotal Runtime (seconds): 0
+Max Memory Usage (KB): 4848
+
+
+
+Run 9 - make clean:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o main
+
+
+Run 9 - make command:
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_count_sort.c -o parallel_count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c count_sort.c -o count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o -lm  # Link the math library
+
+
+
+Run 9 - ./measure.sh ./main output:
+[35mRunning in test mode
+[0m[33mNumber of files: 9000
+Sorting by Name
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0m[33mThreshold: 1687
+[0mTotal Depth of Recursion Tree: 3
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.002865 seconds[32m for 9000 elements
+[0m[32mParallel merge sort completed in [33m0.001759 seconds[32m for 9000 elements
+[0m[33mSpeedup: 1.628982
+[0m[32mParallel merge sort was faster by[33m 0.001106 seconds.
+[0m[35mToo many files to print
+[0mTotal Runtime (seconds): 0.01
+Max Memory Usage (KB): 5176
+
+
+
+Run 10 - make clean:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o main
+
+
+Run 10 - make command:
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_count_sort.c -o parallel_count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c count_sort.c -o count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o -lm  # Link the math library
+
+
+
+Run 10 - ./measure.sh ./main output:
+[35mRunning in test mode
+[0m[33mNumber of files: 10000
+Sorting by Name
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0m[33mThreshold: 1875
+[0mTotal Depth of Recursion Tree: 3
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.003732 seconds[32m for 10000 elements
+[0m[32mParallel merge sort completed in [33m0.002313 seconds[32m for 10000 elements
+[0m[33mSpeedup: 1.613625
+[0m[32mParallel merge sort was faster by[33m 0.001419 seconds.
+[0m[35mToo many files to print
+[0mTotal Runtime (seconds): 0.01
+Max Memory Usage (KB): 5380
+
+
+
+Run 11 - make clean:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o main
+
+
+Run 11 - make command:
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_count_sort.c -o parallel_count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c count_sort.c -o count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o -lm  # Link the math library
+
+
+
+Run 11 - ./measure.sh ./main output:
+[35mRunning in test mode
+[0m[33mNumber of files: 15000
+Sorting by Name
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0m[33mThreshold: 2812
+[0mTotal Depth of Recursion Tree: 3
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.004897 seconds[32m for 15000 elements
+[0m[32mParallel merge sort completed in [33m0.003897 seconds[32m for 15000 elements
+[0m[33mSpeedup: 1.256731
+[0m[32mParallel merge sort was faster by[33m 0.001000 seconds.
+[0m[35mToo many files to print
+[0mTotal Runtime (seconds): 0.01
+Max Memory Usage (KB): 7564
+
+
+
+Run 12 - make clean:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o main
+
+
+Run 12 - make command:
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_count_sort.c -o parallel_count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c count_sort.c -o count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o -lm  # Link the math library
+
+
+
+Run 12 - ./measure.sh ./main output:
+[35mRunning in test mode
+[0m[33mNumber of files: 20000
+Sorting by Name
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0m[33mThreshold: 3750
+[0mTotal Depth of Recursion Tree: 3
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.007586 seconds[32m for 20000 elements
+[0m[32mParallel merge sort completed in [33m0.004039 seconds[32m for 20000 elements
+[0m[33mSpeedup: 1.878176
+[0m[32mParallel merge sort was faster by[33m 0.003547 seconds.
+[0m[35mToo many files to print
+[0mTotal Runtime (seconds): 0.02
+Max Memory Usage (KB): 9368
+
+
+
+Run 13 - make clean:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o main
+
+
+Run 13 - make command:
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_count_sort.c -o parallel_count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c count_sort.c -o count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o -lm  # Link the math library
+
+
+
+Run 13 - ./measure.sh ./main output:
+[35mRunning in test mode
+[0m[33mNumber of files: 25000
+Sorting by Name
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0m[33mThreshold: 4687
+[0mTotal Depth of Recursion Tree: 3
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.009249 seconds[32m for 25000 elements
+[0m[32mParallel merge sort completed in [33m0.006220 seconds[32m for 25000 elements
+[0m[33mSpeedup: 1.486855
+[0m[32mParallel merge sort was faster by[33m 0.003028 seconds.
+[0m[35mToo many files to print
+[0mTotal Runtime (seconds): 0.03
+Max Memory Usage (KB): 11512
+
+
+
+Run 14 - make clean:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o main
+
+
+Run 14 - make command:
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_count_sort.c -o parallel_count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c count_sort.c -o count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o -lm  # Link the math library
+
+
+
+Run 14 - ./measure.sh ./main output:
+[35mRunning in test mode
+[0m[33mNumber of files: 30000
+Sorting by Name
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0m[33mThreshold: 5625
+[0mTotal Depth of Recursion Tree: 3
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.011059 seconds[32m for 30000 elements
+[0m[32mParallel merge sort completed in [33m0.006373 seconds[32m for 30000 elements
+[0m[33mSpeedup: 1.735192
+[0m[32mParallel merge sort was faster by[33m 0.004686 seconds.
+[0m[35mToo many files to print
+[0mTotal Runtime (seconds): 0.03
+Max Memory Usage (KB): 13476
+
+
+
+Run 15 - make clean:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o main
+
+
+Run 15 - make command:
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_count_sort.c -o parallel_count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c count_sort.c -o count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o -lm  # Link the math library
+
+
+
+Run 15 - ./measure.sh ./main output:
+[35mRunning in test mode
+[0m[33mNumber of files: 40000
+Sorting by Name
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0m[33mThreshold: 7500
+[0mTotal Depth of Recursion Tree: 3
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.015508 seconds[32m for 40000 elements
+[0m[32mParallel merge sort completed in [33m0.006966 seconds[32m for 40000 elements
+[0m[33mSpeedup: 2.226153
+[0m[32mParallel merge sort was faster by[33m 0.008542 seconds.
+[0m[35mToo many files to print
+[0mTotal Runtime (seconds): 0.04
+Max Memory Usage (KB): 17584
+
+
+
+Run 16 - make clean:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o main
+
+
+Run 16 - make command:
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_count_sort.c -o parallel_count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c count_sort.c -o count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o -lm  # Link the math library
+
+
+
+Run 16 - ./measure.sh ./main output:
+[35mRunning in test mode
+[0m[33mNumber of files: 50000
+Sorting by Name
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0m[33mThreshold: 9375
+[0mTotal Depth of Recursion Tree: 3
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.017237 seconds[32m for 50000 elements
+[0m[32mParallel merge sort completed in [33m0.008260 seconds[32m for 50000 elements
+[0m[33mSpeedup: 2.086929
+[0m[32mParallel merge sort was faster by[33m 0.008978 seconds.
+[0m[35mToo many files to print
+[0mTotal Runtime (seconds): 0.05
+Max Memory Usage (KB): 21184
+
+
+
+Run 17 - make clean:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o main
+
+
+Run 17 - make command:
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_count_sort.c -o parallel_count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c count_sort.c -o count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o -lm  # Link the math library
+
+
+
+Run 17 - ./measure.sh ./main output:
+[35mRunning in test mode
+[0m[33mNumber of files: 75000
+Sorting by Name
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0m[33mThreshold: 14062
+[0mTotal Depth of Recursion Tree: 3
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.028819 seconds[32m for 75000 elements
+[0m[32mParallel merge sort completed in [33m0.016221 seconds[32m for 75000 elements
+[0m[33mSpeedup: 1.776689
+[0m[32mParallel merge sort was faster by[33m 0.012599 seconds.
+[0m[35mToo many files to print
+[0mTotal Runtime (seconds): 0.09
+Max Memory Usage (KB): 30812
+
+
+
+Run 18 - make clean:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o main
+
+
+Run 18 - make command:
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c parallel_count_sort.c -o parallel_count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -c count_sort.c -o count_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=156250 -DNUM_THREADS_COUNT=4 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o parallel_count_sort.o count_sort.o -lm  # Link the math library
+
+
+
+Run 18 - ./measure.sh ./main output:
+[35mRunning in test mode
+[0m[33mNumber of files: 100000
+Sorting by Name
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0m[33mThreshold: 18750
+[0mTotal Depth of Recursion Tree: 3
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.040326 seconds[32m for 100000 elements
+[0m[32mParallel merge sort completed in [33m0.018534 seconds[32m for 100000 elements
+[0m[33mSpeedup: 2.175765
+[0m[32mParallel merge sort was faster by[33m 0.021792 seconds.
+[0m[35mToo many files to print
+[0mTotal Runtime (seconds): 0.12
+Max Memory Usage (KB): 40832
+
+
+

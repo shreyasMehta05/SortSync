@@ -1,0 +1,32 @@
+
+Merge Sort Performance Analysis Summary
+====================================
+
+Execution Statistics:
+-------------------
+Number of Runs Analyzed: 18
+
+Time Performance:
+---------------
+Regular Sort:
+  - Average: 0.008514 seconds
+  - Min: 0.000435 seconds
+  - Max: 0.040326 seconds
+
+Parallel Sort:
+  - Average: 0.004840 seconds
+  - Min: 0.000837 seconds
+  - Max: 0.018534 seconds
+
+Speedup Analysis:
+---------------
+- Average Speedup: 1.3859x
+- Maximum Speedup: 2.2262x
+- Minimum Speedup: 0.4538x
+- Speedup Std Dev: 0.5346
+
+Memory Usage:
+-----------
+- Average: 10548.00 KB
+- Maximum: 40832 KB
+- Minimum: 2304 KB

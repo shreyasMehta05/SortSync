@@ -1,0 +1,494 @@
+--- Threshold: 50 ---
+Compilation Output:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o main
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=50 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=50 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=50 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=50 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=50 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o
+
+Execution Output:
+[35mRunning in test mode
+[0m[33mNumber of files: 10000
+Sorting by Name
+Threshold: 50
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0mTotal Depth of Recursion Tree: 8
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.002877 seconds[32m for 10000 elements
+[0m[32mParallel merge sort completed in [33m0.010987 seconds[32m for 10000 elements
+[0m[33mSpeedup: 0.261869
+[0m[31mRegular merge sort was faster by [33m0.008110 seconds.
+[0m[35mToo many files to print
+[0m
+
+--- Threshold: 75 ---
+Compilation Output:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o main
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=75 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=75 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=75 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=75 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=75 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o
+
+Execution Output:
+[35mRunning in test mode
+[0m[33mNumber of files: 10000
+Sorting by Name
+Threshold: 75
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0mTotal Depth of Recursion Tree: 8
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.002909 seconds[32m for 10000 elements
+[0m[32mParallel merge sort completed in [33m0.011254 seconds[32m for 10000 elements
+[0m[33mSpeedup: 0.258461
+[0m[31mRegular merge sort was faster by [33m0.008346 seconds.
+[0m[35mToo many files to print
+[0m
+
+--- Threshold: 100 ---
+Compilation Output:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o main
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=100 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=100 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=100 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=100 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=100 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o
+
+Execution Output:
+[35mRunning in test mode
+[0m[33mNumber of files: 10000
+Sorting by Name
+Threshold: 100
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0mTotal Depth of Recursion Tree: 7
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.002906 seconds[32m for 10000 elements
+[0m[32mParallel merge sort completed in [33m0.006733 seconds[32m for 10000 elements
+[0m[33mSpeedup: 0.431554
+[0m[31mRegular merge sort was faster by [33m0.003827 seconds.
+[0m[35mToo many files to print
+[0m
+
+--- Threshold: 150 ---
+Compilation Output:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o main
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=150 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=150 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=150 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=150 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=150 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o
+
+Execution Output:
+[35mRunning in test mode
+[0m[33mNumber of files: 10000
+Sorting by Name
+Threshold: 150
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0mTotal Depth of Recursion Tree: 7
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.002966 seconds[32m for 10000 elements
+[0m[32mParallel merge sort completed in [33m0.006884 seconds[32m for 10000 elements
+[0m[33mSpeedup: 0.430865
+[0m[31mRegular merge sort was faster by [33m0.003918 seconds.
+[0m[35mToo many files to print
+[0m
+
+--- Threshold: 200 ---
+Compilation Output:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o main
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=200 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=200 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=200 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=200 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=200 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o
+
+Execution Output:
+[35mRunning in test mode
+[0m[33mNumber of files: 10000
+Sorting by Name
+Threshold: 200
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0mTotal Depth of Recursion Tree: 6
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.003125 seconds[32m for 10000 elements
+[0m[32mParallel merge sort completed in [33m0.005143 seconds[32m for 10000 elements
+[0m[33mSpeedup: 0.607724
+[0m[31mRegular merge sort was faster by [33m0.002017 seconds.
+[0m[35mToo many files to print
+[0m
+
+--- Threshold: 250 ---
+Compilation Output:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o main
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=250 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=250 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=250 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=250 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=250 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o
+
+Execution Output:
+[35mRunning in test mode
+[0m[33mNumber of files: 10000
+Sorting by Name
+Threshold: 250
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0mTotal Depth of Recursion Tree: 6
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.003125 seconds[32m for 10000 elements
+[0m[32mParallel merge sort completed in [33m0.005409 seconds[32m for 10000 elements
+[0m[33mSpeedup: 0.577746
+[0m[31mRegular merge sort was faster by [33m0.002284 seconds.
+[0m[35mToo many files to print
+[0m
+
+--- Threshold: 500 ---
+Compilation Output:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o main
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=500 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=500 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=500 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=500 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=500 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o
+
+Execution Output:
+[35mRunning in test mode
+[0m[33mNumber of files: 10000
+Sorting by Name
+Threshold: 500
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0mTotal Depth of Recursion Tree: 5
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.003042 seconds[32m for 10000 elements
+[0m[32mParallel merge sort completed in [33m0.003022 seconds[32m for 10000 elements
+[0m[33mSpeedup: 1.006334
+[0m[32mParallel merge sort was faster by[33m 0.000019 seconds.
+[0m[35mToo many files to print
+[0m
+
+--- Threshold: 750 ---
+Compilation Output:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o main
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=750 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=750 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=750 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=750 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=750 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o
+
+Execution Output:
+[35mRunning in test mode
+[0m[33mNumber of files: 10000
+Sorting by Name
+Threshold: 750
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0mTotal Depth of Recursion Tree: 4
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.002915 seconds[32m for 10000 elements
+[0m[32mParallel merge sort completed in [33m0.001989 seconds[32m for 10000 elements
+[0m[33mSpeedup: 1.465082
+[0m[32mParallel merge sort was faster by[33m 0.000925 seconds.
+[0m[35mToo many files to print
+[0m
+
+--- Threshold: 1000 ---
+Compilation Output:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o main
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=1000 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=1000 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=1000 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=1000 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=1000 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o
+
+Execution Output:
+[35mRunning in test mode
+[0m[33mNumber of files: 10000
+Sorting by Name
+Threshold: 1000
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0mTotal Depth of Recursion Tree: 4
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.002831 seconds[32m for 10000 elements
+[0m[32mParallel merge sort completed in [33m0.002353 seconds[32m for 10000 elements
+[0m[33mSpeedup: 1.202889
+[0m[32mParallel merge sort was faster by[33m 0.000477 seconds.
+[0m[35mToo many files to print
+[0m
+
+--- Threshold: 2000 ---
+Compilation Output:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o main
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=2000 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=2000 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=2000 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=2000 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=2000 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o
+
+Execution Output:
+[35mRunning in test mode
+[0m[33mNumber of files: 10000
+Sorting by Name
+Threshold: 2000
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0mTotal Depth of Recursion Tree: 3
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.002857 seconds[32m for 10000 elements
+[0m[32mParallel merge sort completed in [33m0.001753 seconds[32m for 10000 elements
+[0m[33mSpeedup: 1.629505
+[0m[32mParallel merge sort was faster by[33m 0.001104 seconds.
+[0m[35mToo many files to print
+[0m
+
+--- Threshold: 3000 ---
+Compilation Output:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o main
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=3000 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=3000 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=3000 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=3000 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=3000 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o
+
+Execution Output:
+[35mRunning in test mode
+[0m[33mNumber of files: 10000
+Sorting by Name
+Threshold: 3000
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0mTotal Depth of Recursion Tree: 2
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.003004 seconds[32m for 10000 elements
+[0m[32mParallel merge sort completed in [33m0.001622 seconds[32m for 10000 elements
+[0m[33mSpeedup: 1.851466
+[0m[32mParallel merge sort was faster by[33m 0.001381 seconds.
+[0m[35mToo many files to print
+[0m
+
+--- Threshold: 5000 ---
+Compilation Output:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o main
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=5000 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=5000 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=5000 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=5000 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=5000 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o
+
+Execution Output:
+[35mRunning in test mode
+[0m[33mNumber of files: 10000
+Sorting by Name
+Threshold: 5000
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0mTotal Depth of Recursion Tree: 1
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.003233 seconds[32m for 10000 elements
+[0m[32mParallel merge sort completed in [33m0.002040 seconds[32m for 10000 elements
+[0m[33mSpeedup: 1.584446
+[0m[32mParallel merge sort was faster by[33m 0.001192 seconds.
+[0m[35mToo many files to print
+[0m
+
+--- Threshold: 7000 ---
+Compilation Output:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o main
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=7000 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=7000 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=7000 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=7000 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=7000 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o
+
+Execution Output:
+[35mRunning in test mode
+[0m[33mNumber of files: 10000
+Sorting by Name
+Threshold: 7000
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0mTotal Depth of Recursion Tree: 1
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.003172 seconds[32m for 10000 elements
+[0m[32mParallel merge sort completed in [33m0.002249 seconds[32m for 10000 elements
+[0m[33mSpeedup: 1.410246
+[0m[32mParallel merge sort was faster by[33m 0.000923 seconds.
+[0m[35mToo many files to print
+[0m
+
+--- Threshold: 10000 ---
+Compilation Output:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o main
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=10000 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=10000 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=10000 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=10000 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=10000 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o
+
+Execution Output:
+[35mRunning in test mode
+[0m[33mNumber of files: 10000
+Sorting by Name
+Threshold: 10000
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0mTotal Depth of Recursion Tree: 0
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.003167 seconds[32m for 10000 elements
+[0m[32mParallel merge sort completed in [33m0.002940 seconds[32m for 10000 elements
+[0m[33mSpeedup: 1.077193
+[0m[32mParallel merge sort was faster by[33m 0.000227 seconds.
+[0m[35mToo many files to print
+[0m
+
+--- Threshold: 20000 ---
+Compilation Output:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o main
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=20000 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=20000 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=20000 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=20000 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=20000 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o
+
+Execution Output:
+[35mRunning in test mode
+[0m[33mNumber of files: 10000
+Sorting by Name
+Threshold: 20000
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0mTotal Depth of Recursion Tree: 0
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.003098 seconds[32m for 10000 elements
+[0m[32mParallel merge sort completed in [33m0.002962 seconds[32m for 10000 elements
+[0m[33mSpeedup: 1.046244
+[0m[32mParallel merge sort was faster by[33m 0.000137 seconds.
+[0m[35mToo many files to print
+[0m
+
+--- Threshold: 30000 ---
+Compilation Output:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o main
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=30000 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=30000 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=30000 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=30000 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=30000 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o
+
+Execution Output:
+[35mRunning in test mode
+[0m[33mNumber of files: 10000
+Sorting by Name
+Threshold: 30000
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0mTotal Depth of Recursion Tree: 0
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.003071 seconds[32m for 10000 elements
+[0m[32mParallel merge sort completed in [33m0.002769 seconds[32m for 10000 elements
+[0m[33mSpeedup: 1.109110
+[0m[32mParallel merge sort was faster by[33m 0.000302 seconds.
+[0m[35mToo many files to print
+[0m
+
+--- Threshold: 50000 ---
+Compilation Output:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o main
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=50000 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=50000 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=50000 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=50000 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=50000 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o
+
+Execution Output:
+[35mRunning in test mode
+[0m[33mNumber of files: 10000
+Sorting by Name
+Threshold: 50000
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0mTotal Depth of Recursion Tree: 0
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.003194 seconds[32m for 10000 elements
+[0m[32mParallel merge sort completed in [33m0.002773 seconds[32m for 10000 elements
+[0m[33mSpeedup: 1.151688
+[0m[32mParallel merge sort was faster by[33m 0.000421 seconds.
+[0m[35mToo many files to print
+[0m
+
+--- Threshold: 70000 ---
+Compilation Output:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o main
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=70000 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=70000 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=70000 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=70000 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=70000 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o
+
+Execution Output:
+[35mRunning in test mode
+[0m[33mNumber of files: 10000
+Sorting by Name
+Threshold: 70000
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0mTotal Depth of Recursion Tree: 0
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.002981 seconds[32m for 10000 elements
+[0m[32mParallel merge sort completed in [33m0.002796 seconds[32m for 10000 elements
+[0m[33mSpeedup: 1.066358
+[0m[32mParallel merge sort was faster by[33m 0.000186 seconds.
+[0m[35mToo many files to print
+[0m
+
+--- Threshold: 100000 ---
+Compilation Output:
+rm -f main.o file_info.o parallel_merge_sort.o merge_sort.o main
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=100000 -c main.c -o main.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=100000 -c file_info.c -o file_info.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=100000 -c parallel_merge_sort.c -o parallel_merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=100000 -c merge_sort.c -o merge_sort.o
+gcc -pthread -Wall -Wextra -g -DTEST -DTHRESHOLD=100000 -o main main.o file_info.o parallel_merge_sort.o merge_sort.o
+
+Execution Output:
+[35mRunning in test mode
+[0m[33mNumber of files: 10000
+Sorting by Name
+Threshold: 100000
+[0m[34mRegular Merge Sort Started
+[0m[32mRegular merge sort completed and sorted Successfully
+[0m[34mParallel Merge Sort Started
+[0mTotal Depth of Recursion Tree: 0
+[32mParallel merge sort completed and sorted Successfully
+[0m[32mRegular merge sort completed in [33m0.002992 seconds[32m for 10000 elements
+[0m[32mParallel merge sort completed in [33m0.002733 seconds[32m for 10000 elements
+[0m[33mSpeedup: 1.094704
+[0m[32mParallel merge sort was faster by[33m 0.000259 seconds.
+[0m[35mToo many files to print
+[0m
+
