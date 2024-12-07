@@ -1,4 +1,6 @@
 # **SortSync**
+![Waketime](https://img.shields.io/badge/Waketime-63%20hrs%2013%20mins-blueviolet?style=flat&labelColor=black&logo=clock&logoColor=white)
+
 
 
 ## *Project Title:*  ***Implementation of Parallel Sorting Algorithms***
